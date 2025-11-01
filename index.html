@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Open Trip</title>
+</head>
+<body>
+    <header style="background-color: rgb(163, 0, 0);color: white; padding: 15px 15px; text-align: center;">
+        <h1>OPEN TRIP JAPAN</h1>
+        <nav>
+            <a style="color: goldenrod;" href="#">Home</a>
+            <span style="margin-left: 10px; margin-right: 10px;">|</span>
+            <a style="color: goldenrod;" href="#">Pendaftaran</a>
+             <span style="margin-left: 10px; margin-right: 10px;">|</span>
+            <a style="color: goldenrod;"" href="#">Galeri</a>
+        </nav>
+    </header>
+    <main style="padding: 10px;">
+        <form action="/Latihan_Form/submit.html">
+        <section id="Personal-information">
+            <fieldset>
+                <legend style="padding: 10px;"><strong>Data Pribadi</strong></legend>
+                
+                <label for="name">Nama Peserta</label><br>  
+                <input type="text" id="name" name="name" placeholder="Tulis namamu disini" required/><br><br>
+                
+                <label for="email">Email</label><br>  
+                <input type="email" id="email" name="email" placeholder="Tuliskan Emailmu" required/><br><br>
+                
+                <label for="date">Tanggal Lahir</label><br>  
+                <input type="date" id="date" name="date" required/><br><br>
+
+                <label>Jenis Kelamin</label><br>
+                <input type="radio" id="gender" name="gender" value="male" required/>
+                <label for="gender">male</label><br> 
+                <input type="radio" id="gender" name="gender" value="female" required/>
+                <label for="gender">female</label><br>  
+            </fieldset>
+        </section>
+        <br>
+        <section>
+            <fieldset>
+                <legend style="padding: 10px;"><strong>Informasi Paket</strong></legend>
+            <label for="paket">Pilihan Paket</label><br>
+            <select id="paket" name="paket">
+                <option value="">-- Select Package --</option>
+                <option value="reguler">Reguler</option>
+                <option value="vip">VIP</option>
+                <option value="couple">Couple</option>
+                <option value="family">Family</option>
+            </select><br><br>
+        <label for="paketplus">Paket Tambahan</label><br>    
+        <input
+            type="checkbox"
+            id="paketplus"
+            name="paketplus"
+            value="Breakfast">
+            <label>Breakfast Hotel</label><br>
+        <input
+            type="checkbox"
+            id="paketplus"
+            name="paketplus"
+            value="sepeda">
+            <label>Sepeda</label><br>
+        <input
+            type="checkbox"
+            id="paketplus"
+            name="paketplus"
+            value="Dinner">
+            <label>Dinner</label><br><br>
+        <label for="upload">Upload Bukti Pembayaran</label><br>
+        <input type="file" id="upload" name="upload" value="file">    
+    </fieldset>
+        </section>
+        <section>
+        <fieldset>
+            <legend style="padding: 15px;">Informasi Tambahan</legend>
+            <label for="form-textarea">Request Tambahan</label><br>
+            <textarea id="form-textarea" name="request" placeholder="Tulis request tambahan" cols="50" rows="3"></textarea>
+        </fieldset>
+        </section>
+        <br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+        </form>
+    </main>
+</body>
+<footer>
+
+</footer>
+</html>
